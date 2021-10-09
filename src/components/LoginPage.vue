@@ -1,37 +1,80 @@
 <template>
-  <div class="container">
-      <h2>qhelper</h2>
+  <div class="container" id="background">
+    <div class="container" id="container_left">
+      <h1>qhelper</h1>
       <h2>Hotel Miracle Quarantine Assistance System</h2>
-  </div>
-  <div class="container">
-    <form action="/action_page.php">
-      <div class="row">
-        <button type="button">Guests</button>
-        <button type="button">Admin</button> <br />
-        <input
-          type="text"
-          name="roomNumber"
-          placeholder="Room Number"
-          required
-        />
-        <br />
-        <input type="text" name="firstName" placeholder="First Name" required />
-        <br />
-        <input type="submit" value="Enter" class="btn" />
-      </div>
-    </form>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        New guest?
-        <a href="./RegistrationForm01.vue">Register here when you arrive!</a>
-      </div>
+    </div>
+    <div class="container" id="container_right">
+      <form action="/action_page.php">
+        <div class="row">
+          <button class = "bar_btn" type="button">Guests</button>
+          <button class = "bar_btn" type="button">Admin</button> 
+          <br><br>
+          <input
+            type="text"
+            name="roomNumber"
+            placeholder="Room Number"
+            required
+          />
+          <br>
+          <input
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            required
+          />
+          <br><br>
+          <input type="submit" value="Enter" class="btn" />
+        </div>
+      </form>
+      New guest?
+      <a href="./RegistrationForm.vue">Register here when you arrive!</a>
     </div>
   </div>
 </template>
 
 <style scoped>
-
+h1 {
+    font-size: 80px;
+    color: rgb(96, 96, 194);
+}
+h2 {
+    font-size: 40px;
+    color: rgb(154, 177, 206);
+}
+#background {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/plane.png");
+  background-size: 100% 100%;
+  position: fixed;
+}
+#container_left {
+  position: relative;
+  width: 50%;
+  height: 80%;
+  top: 20%;
+  float: left;
+  text-align: right;
+}
+#container_right {
+  position: relative;
+  width: 50%;
+  height: 80%;
+  top: 30%;
+  float: left;
+  text-align: center;
+}
+.btn {
+    width: 100px;
+    height: 30px;
+    color: white;
+    background: rgb(77, 77, 236);
+}
+.bar_btn {
+    width: 100px;
+    height: 30px;
+    color: white;
+    background: rgb(162, 162, 255);
+}
 </style>

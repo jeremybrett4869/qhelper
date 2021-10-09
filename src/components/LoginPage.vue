@@ -27,6 +27,7 @@
           <input type="submit" value="Enter" class="btn" />
         </div>
       </form>
+      <br>
       New guest?
       <a href="./RegistrationForm.vue">Register here when you arrive!</a>
     </div>
@@ -51,7 +52,7 @@ h2 {
 }
 #container_left {
   position: relative;
-  width: 50%;
+  width: 45%;
   height: 80%;
   top: 20%;
   float: left;
@@ -59,7 +60,7 @@ h2 {
 }
 #container_right {
   position: relative;
-  width: 50%;
+  width: 55%;
   height: 80%;
   top: 30%;
   float: left;
@@ -69,12 +70,18 @@ h2 {
     width: 100px;
     height: 30px;
     color: white;
+    padding: 0;
+    border: none;
+    font-size: large;
     background: rgb(77, 77, 236);
 }
 .bar_btn {
     width: 100px;
     height: 30px;
     color: white;
+    padding: 0;
+    border: none;
+    font-size: large;
     background: rgb(162, 162, 255);
 }
 </style>

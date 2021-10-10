@@ -1,15 +1,19 @@
 <template>
   <!-- <LoginPage/> -->
-  <RegistrationForm/>
+  <!-- <RegistrationForm/> -->
+  <RoomSelection name="Mr Jones"/>
 </template>
 
 <script>
 // import LoginPage from './components/LoginPage.vue'
-import RegistrationForm from './components/RegistrationForm.vue'
+//import RegistrationForm from './components/RegistrationForm.vue'
+import RoomSelection from './components/RoomSelection.vue'
 export default {
   name: 'App',
   components: {
-    RegistrationForm
+    //LoginPage,
+    //RegistrationForm,
+    RoomSelection,
   }
 }
 

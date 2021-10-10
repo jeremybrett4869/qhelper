@@ -1,11 +1,19 @@
 <template>
-  <h1>qhelper</h1>
-  <h1>Hotel Miracle</h1>
-  <h1>Post Arrival Registration</h1>
-  <div class = "topbar">
-      Personal information
-      Room Selection
-      Pass Generation
+  <div class="container" id="top-left">
+    <text id="logo">qhelper </text>
+    <text id="hotel"> Hotel Miracle</text>
+  </div>
+  <div class="container" id="top-right">
+    <text id="title">Post Arrival Registration</text>
+  </div>
+  <div class="topbar" id="mid">
+    <text id="done">
+      1. Personal information
+    </text>
+    <text id="not-done"
+      >--------------------- 2. Room Selection ---------------------- 3. Pass
+      Generation
+    </text>
   </div>
   <div id="reg_form">
     <div class="container" id="left">
@@ -65,10 +73,16 @@
           />
         </div>
         <br />
-        <h4>Travel History (Past 14 days)</h4>
+        <text>Travel History (Past 14 days)</text>
         <div class="col-name">
-          <label for="sdate">Start date</label>
-          <label for="edate">End date</label>
+          <label for="sdate"
+            >Start date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;</label
+          >
+          <label for="edate"
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; End
+            date</label
+          >
         </div>
         <div class="col-con">
           <input type="date" id="sdate" name="sdate" />
@@ -132,7 +146,7 @@
         <div class="col-con">
           <input type="text" id="seat" name="seat" placeholder="e.g: 45D" />
         </div>
-        <br /><br /><br /><br />
+        <br /><br />
         <div class="col-name">
           <label for="country">Country & Region</label>
         </div>
@@ -156,7 +170,7 @@
     </div>
     <div class="container" id="right">
       <h4>
-        I hereby declare that the above mentioned information is true to the
+        I hereby declare that the information above mentioned is true to the
         best of my knowledge.
       </h4>
       <h4>
@@ -170,31 +184,91 @@
 </template>
 
 <style scoped>
+#logo {
+  font-size: 40px;
+  text-align: left;
+}
+#hotel {
+  font-size: 30px;
+  color: rgb(154, 177, 206);
+}
+#title {
+  font-size: 30px;
+  color: rgb(133, 130, 130);
+}
+#top-left {
+  position: relative;
+  width: 50%;
+  height: 10vh;
+  top: 10vh;
+  text-align: center;
+  float: left;
+}
+#top-right {
+  position: relative;
+  width: 50%;
+  height: 10vh;
+  top: 10vh;
+  text-align: center;
+  float: left;
+}
+#mid {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  top: 12vh;
+  text-align: center;
+}
 #reg_form {
+  position: relative;
   width: 80vw;
   height: 60vh;
+  top: 20vh;
+  left: 9vw;
+  border-style: solid;
+  border-width: 5px;
+  border-color: lavender;
 }
 #left {
   position: relative;
   width: 35%;
-  left: 10%;
   height: 100%;
+  top: 5%;
+  left: 8%;
   float: left;
   text-align: left;
 }
 #middle {
   position: relative;
-  width: 35%;
+  width: 25%;
   height: 100%;
-  left: 10%;
+  top: 5%;
+  left: 8%;
   float: left;
   text-align: left;
 }
 #right {
   position: relative;
-  width: 30%;
-  height: 100%;
+  width: 20%;
+  height: 80%;
+  top: 15%;
   left: 10%;
   float: left;
+}
+text,
+.col-name {
+  color: rgb(55, 55, 156);
+  font-size: large;
+  font-weight: bold;
+}
+.btn {
+  width: 240px;
+  height: 30px;
+  color: white;
+  padding: 0;
+  border: none;
+  font-size: large;
+  font-weight: bold;
+  background: rgb(77, 77, 236);
 }
 </style>

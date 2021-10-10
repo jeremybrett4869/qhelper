@@ -1,13 +1,15 @@
 <template>
-  <LoginPage/>
+  <!-- <LoginPage/> -->
+  <RegistrationForm/>
 </template>
 
 <script>
-import LoginPage from './components/LoginPage.vue'
+// import LoginPage from './components/LoginPage.vue'
+import RegistrationForm from './components/RegistrationForm.vue'
 export default {
   name: 'App',
   components: {
-    LoginPage
+    RegistrationForm
   }
 }
 
